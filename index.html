@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="/build/index.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="build/index.css" type="text/css" media="screen" charset="utf-8">
     <style type="text/css">
 
       /*
@@ -39,7 +39,7 @@
         fill:none;
       }
       body{
-        background: url(/images/diagmonds.png)
+        background: url(..//images/diagmonds.png)
       }
       .span4{
         text-align:center;
@@ -64,7 +64,7 @@
         var g = new Graphene;
         g.discover('http://stats.blakedev.com', 'all', function(i, url){ return "#dashboard"; }, function(description){
           g.build(description);
-          console.log(description);
+          // console.log(description);
         });
       });
     </script>
