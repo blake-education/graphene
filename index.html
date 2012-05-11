@@ -51,11 +51,11 @@
       </style>
   </head>
   <body>
-    
+
 
     <h2 id="hero-two">Blake eLearning Dashboard</h2>
     <div id="dashboard" class="container-fluid">
-      
+
     </div>
 
     <script type="text/javascript" src="vendor/js/jquery-1.7.1.min.js"></script>
@@ -63,13 +63,13 @@
     <script type="text/javascript">
       $(function(){
         var g = new Graphene;
-        g.discover('http://stats.blakedev.com', 'all', function(i, url){ return "#dashboard"; }, function(description){
+        g.discover('http://stats.blakedev.com', 'student_counts', function(i, url){ return "#dashboard"; }, function(description){
           g.build(description);
           // console.log(description);
         });
       });
     </script>
-      
+
 
   </body>
 </html>
